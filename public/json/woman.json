@@ -1,0 +1,134 @@
+{
+	"cate": "woman",
+	"all":{
+		"latest":[
+			{
+				"tit": "Designer Glasses Frames",
+				"img1": "../img/product-17-300x400.jpg",
+				"img2": "../img/product-14-300x400.jpg",
+				"star": 3,
+				"price": "<span>$24.00 - $30.00</span>",
+				"sale": true,
+				"hot": false,
+				"link": "../test/test.html",
+				"target": "_blank"
+			},{
+				"tit": "Flower Glass Vase",
+				"img1": "../img/product-1-300x400.jpg",
+				"img2": "../img/product-15-300x400.jpg",
+				"star": 4,
+				"price": "<span>$259.00</span>",
+				"sale": false,
+				"hot": true,
+				"link": "../test/test.html",
+				"target": "_blank"
+			},{
+				"tit": "Handmade Pillow",
+				"img1": "../img/product-2-300x400.jpg",
+				"img2": "../img/product-3-300x400.jpg",
+				"star": 3,
+				"price": "<span class=\"del_price\">$217.21</span><span>$210.00</span>",
+				"sale": true,
+				"hot": true,
+				"link": "../test/test.html",
+				"target": "_blank"
+			},{
+				"tit": "Chaise Pied Eiffel",
+				"img1": "../img/product-16-300x400.jpg",
+				"img2": "../img/product-12-300x400.jpg",
+				"star": 5,
+				"price": "<span class=\"del_price\">$815.00</span><span>$810.00</span>",
+				"sale": false,
+				"hot": false,
+				"link": "../test/test.html",
+				"target": "_blank"
+			}
+		], 
+		"top":[
+			{
+				"tit": "Chaise Pied Eiffel",
+				"img1": "../img/product-16-300x400.jpg",
+				"img2": "../img/product-12-300x400.jpg",
+				"star": 5,
+				"price": "<span class=\"del_price\">$815.00</span><span>$810.00</span>",
+				"sale": false,
+				"hot": false,
+				"link": "../test/test.html",
+				"target": "_blank"
+			},{
+				"tit": "Designer Glasses Frames",
+				"img1": "../img/product-17-300x400.jpg",
+				"img2": "../img/product-14-300x400.jpg",
+				"star": 3,
+				"price": "<span>$24.00 - $30.00</span>",
+				"sale": true,
+				"hot": false,
+				"link": "../test/test.html",
+				"target": "_blank"
+			},{
+				"tit": "Handmade Pillow",
+				"img1": "../img/product-2-300x400.jpg",
+				"img2": "../img/product-3-300x400.jpg",
+				"star": 3,
+				"price": "<span class=\"del_price\">$217.21</span><span>$210.00</span>",
+				"sale": true,
+				"hot": true,
+				"link": "../test/test.html",
+				"target": "_blank"
+			},{
+				"tit": "Flower Glass Vase",
+				"img1": "../img/product-1-300x400.jpg",
+				"img2": "../img/product-15-300x400.jpg",
+				"star": 4,
+				"price": "<span>$259.00</span>",
+				"sale": false,
+				"hot": true,
+				"link": "../test/test.html",
+				"target": "_blank"
+			}
+		], 
+		"best":[
+			{
+				"tit": "Flower Glass Vase",
+				"img1": "../img/product-1-300x400.jpg",
+				"img2": "../img/product-15-300x400.jpg",
+				"star": 4,
+				"price": "<span>$259.00</span>",
+				"sale": false,
+				"hot": true,
+				"link": "../test/test.html",
+				"target": "_blank"
+			},{
+				"tit": "Designer Glasses Frames",
+				"img1": "../img/product-17-300x400.jpg",
+				"img2": "../img/product-14-300x400.jpg",
+				"star": 3,
+				"price": "<span>$24.00 - $30.00</span>",
+				"sale": true,
+				"hot": false,
+				"link": "../test/test.html",
+				"target": "_blank"
+			},{
+				"tit": "Chaise Pied Eiffel",
+				"img1": "../img/product-16-300x400.jpg",
+				"img2": "../img/product-12-300x400.jpg",
+				"star": 5,
+				"price": "<span class=\"del_price\">$815.00</span><span>$810.00</span>",
+				"sale": false,
+				"hot": false,
+				"link": "../test/test.html",
+				"target": "_blank"
+			},{
+				"tit": "Handmade Pillow",
+				"img1": "../img/product-2-300x400.jpg",
+				"img2": "../img/product-3-300x400.jpg",
+				"star": 3,
+				"price": "<span class=\"del_price\">$217.21</span><span>$210.00</span>",
+				"sale": true,
+				"hot": true,
+				"link": "../test/test.html",
+				"target": "_blank"
+			}
+		]
+	}
+}

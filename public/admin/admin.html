@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/w3.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/admin.css">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/imagesloaded.pkgd.min.js"></script>
+	<script src="../js/masonry.pkgd.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/w3.js"></script>
+</head>
+<body>
+	<div w3-include-html="header.html"></div>
+	<div class="page" id="page1">
+		<div>
+			<input type="text" name="title1" id="title1" class="w3-input w3-border w3-show-inline-block" placeholder="title">
+			<input type="text" name="link1" id="link1" class="w3-input w3-border w3-show-inline-block" placeholder="link">
+			<select name="target1" id="target1" class="w3-select w3-border w3-show-inline-block">
+				<option value="_blank" selected>새창</option>
+				<option value="_self">현재창</option>
+			</select>
+			<button type="button" id="bt1_save" class="w3-indigo w3-button">등록</button>
+		</div>
+		<ul id="homes"></ul>
+	</div>
+	<script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+	<script src="../js/admin.js"></script>
+</body>
+</html>

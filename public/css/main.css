@@ -1,0 +1,241 @@
+@import 'base.css';
+/***** 공통사항 *****/
+body {min-height:3000px;}
+.wrap {width:100%; max-width:1170px; margin:auto; position:relative;}
+.modals {position:fixed; z-index:9999; display:none;}
+.rt_bg {width:100%; height:100%; background-color:#000; top:0; left:0;}
+.rt_cont {width:240px; height:100%; background-color:#fff; text-align:center; top:0; right:0; font-size:0.75rem;}
+.rt_cont > .fa-close {font-size: 1.5em; padding:3em 0 4em 0; cursor:pointer;}
+.mypages > li {padding:1em 0; cursor:pointer;}
+.mypages > li:hover {color:#222;}
+.country {margin-top:1.5em;}
+.country > span {width:40px; height:40px; line-height:40px; margin:4px 0; cursor:pointer;}
+.country > span:hover {background-color: rgb(104, 211, 119) !important;}
+.rt_arrow {transition:padding-left 0.2s; height:2rem; line-height:2rem; border-bottom:1px solid #ccc; cursor:pointer; font-size:0.75rem; font-weight:600;}
+.rt_arrow:hover {padding-left:20px; 
+	background:url(../img/arrow_right.png) no-repeat left center;}
+.rt_arrow a {text-decoration:none;}
+.rt_arrow a:link {color:#666;}
+.rt_arrow a:visited {color:#666;}
+.rt_arrow a:hover {color:#333;}
+.rt_arrow a:active {color:#333;}
+.size_ani:hover {transform:scale(1.1); transition-duration:1s;}
+.spinner {padding:1rem; text-align:center; font-size:3rem;}
+
+.cycle-pager { text-align: center; width: 100%; z-index: 9000; position: absolute; bottom: 10px; overflow: hidden;}
+.cycle-pager span { font-family: arial; font-size: 30px; 
+	display: inline-block; color: rgb(85, 85, 85); cursor: pointer; }
+.cycle-pager span.cycle-pager-active { color: rgb(224, 47, 100);}
+.cycle-pager > * { cursor: pointer;}
+
+/***** 애니메이션 키프레임 *****/
+.aniset {animation-fill-mode:forwards; animation-timing-function:ease-in-out;}
+@keyframes leftShow {
+	0% {transform:translateX(-200px); opacity:0;}
+	100% {transform:translateX(0); opacity:1;}
+}
+@keyframes leftHide {
+	0% {transform:translateX(0); opacity:1;}
+	100% {transform:translateX(-200px); opacity:0;}
+}
+@keyframes rightShow {
+	0% {transform:translateX(200px); opacity:0;}
+	100% {transform:translateX(0); opacity:1;}
+}
+@keyframes rightHide {
+	0% {transform:translateX(0); opacity:1;}
+	100% {transform:translateX(200px); opacity:0;}
+}
+@keyframes topShow {
+	0% {transform:translateY(-200px); opacity:0;}
+	100% {transform:translateY(0); opacity:1;}
+}
+@keyframes topHide {
+	0% {transform:translateY(0); opacity:1;}
+	100% {transform:translateY(-200px); opacity:0;}
+}
+@keyframes bottomShow {
+	0% {transform:translateY(200px); opacity:0;}
+	100% {transform:translateY(0); opacity:1;}
+}
+@keyframes bottomHide {
+	0% {transform:translateY(0); opacity:1;}
+	100% {transform:translateY(200px); opacity:0;}
+}
+@keyframes bottomShow2 {
+	0% {transform:translateY(20px); opacity:0;}
+	100% {transform:translateY(0); opacity:1;}
+}
+@keyframes bottomHide2 {
+	0% {transform:translateY(0); opacity:1;}
+	100% {transform:translateY(20px); opacity:0;}
+}
+@keyframes scaleUp {
+	0% {transform:scale(1); opacity:0;}
+	100% {transform:scale(1.05); opacity:1;}
+}
+@keyframes scaleDn {
+	0% {transform:scale(1.05); opacity:1;}
+	100% {transform:scale(1); opacity:0;}
+}
+
+/***** Hover set *****/
+.hov_mask {background-color:rgba(0,0,0,0.5); position:absolute; top:0; left:0; width:100%; height:100%;}
+.hov_mask > li {position:absolute;}
+.hov_mask > li:nth-child(1) {width:50%; border-top:1px solid #fff; left:50%; top:10px; transform:translateX(-50%);}
+.hov_mask > li:nth-child(2) {width:50%; border-top:1px solid #fff; left:50%; bottom:10px;transform:translateX(-50%);}
+.hov_mask > li:nth-child(3) {height:50%; border-left:1px solid #fff; left:10px; top:50%; transform:translateY(-50%);}
+.hov_mask > li:nth-child(4) {height:50%; border-left:1px solid #fff; right:10px; top:50%; transform:translateY(-50%);}
+
+/***** Ghost button set *****/
+.ghost_bt {height:2rem; border:1px solid #333; border-radius:1rem; position: relative; line-height:2rem; text-align:center; color:#666; background-color:#fff; font-size:0.75em; padding:0 1rem; cursor:pointer; margin:0.5rem;}
+.ghost_bt:hover {border:1px solid #fff; color:#fff;}
+.ghost_bt > div {position:absolute; width:100%; height:100%; border-radius:1rem; background-color:#333; top:0; left:0; transform:scale(0);}
+.ghost_bt > span {position:relative; width:100%; height:100%;}
+
+
+
+/***** 상단네비 / top_navs *****/
+.logo {float:left;}
+.top_navs {padding:2rem 0;}
+.top_nav {float:right;}
+.top_nav > li {float:left; margin-right:3rem; font-size:0.75rem; font-weight: 600; cursor:pointer;}
+.top_nav > li:nth-child(1) {line-height:1.25rem;}
+.top_nav > li:nth-child(2) {line-height:1.25rem;}
+.top_nav > li:nth-child(1) > img {margin-right:0.75rem; margin-top:0.25rem;}
+.top_nav > li:nth-child(2) > img {margin-right:0.75rem; margin-top:0.25rem;}
+.top_nav > li:nth-child(3) {padding-top:0.5rem; position:relative;}
+.top_nav > li:nth-child(3) > .w3-badge {position:absolute; color:#666; padding:0.25rem 0.5rem; top:-1rem;}
+.top_nav > li:nth-child(4) {padding-top:0.5rem; margin-right:0;}
+.top_nav .fa-shopping-bag {font-size:1.25rem; color:#222;}
+.top_nav .fa-bars {font-size:1.25rem; color:#222;}
+
+/***** 메인네비 / navs *****/
+.navs {width:100%; background-color:#222; font-size:0.75rem;}
+.navs > ul > li {height:54px; cursor:pointer;}
+.navs > ul > .nav {float:left; color:#aaa; line-height:54px; margin-right:3em; font-weight:600;}
+.navs .nav_sub {position:absolute; min-width:200px; min-height:200px; background-color:white; box-shadow: 0 0 10px rgba(0,0,0,.5); display:none; top:80px; z-index:99999;}
+.navs .nav:hover {color:#fff;}
+.navs .search {float:right; height:38px; margin-top:8px; background-color:#fff; border-radius:19px;}
+.navs .in_search {height:24px; width:120px; margin:8px 12px 0 20px; border:none;}
+.navs .in_search:focus {outline:none;}
+.navs .fa-search {font-size:1.25em; margin-right:20px;}
+/***** 카테고리 HOME *****/
+.nav:nth-child(1) > .nav_sub {width:400px; padding:1rem 0;}
+.nav:nth-child(1) > .nav_sub > li {float:left; width:10rem; margin:0.5rem 1rem; overflow:hidden;}
+/***** 카테고리 SHOP *****/
+.nav:nth-child(2) > .nav_sub {width:100%; padding:2rem; left:0;}
+.shop_cates > ul {width:21%; margin:0 2%; float:left; font-size:0.75rem;}
+.shop_cate_tit {font-weight:bolder; color:#222; font-size:1.25em;}
+.shop_cate_name {margin:0; line-height:2rem; border-bottom:1px solid #eee;}
+.shop_prds {margin-top:2rem;}
+.shop_prd {width:30%; float:left;}
+.shop_prd:nth-child(2) {margin:0 5%;}
+/***** 카테고리 BLOG *****/
+.blogs {width:100%; padding:1rem; left:0; color:#000;}
+.blogs > :first-child {width:70%; float:left;}
+.blogs > :last-child {width:30%; float:right;}
+.grid {display:flex; flex-wrap:wrap;}
+.grid-item {width:50%; padding:3%; float:left;}
+/***** 카테고리 PORT *****/
+.nav:nth-child(4) > .nav_sub {padding:1rem 0;}
+.nav:nth-child(4) > .nav_sub > li {width:10rem; margin:0.5rem 1rem;}
+
+/***** 메인 (좌측네비 및 배너) / mains *****/
+.mains {margin-top:2rem;}
+.lefts {width:18%; float:left; padding-right:2rem;}
+.bans {width:82%; float:right; position:relative; overflow: hidden;}
+.ban {width:100%; position:relative;}
+.ban > li {width:100%;}
+.ban > li > div {position: absolute; top:50%; left:10%; font-size:3rem; color:#fff; opacity:0;}
+.ban > li > div:nth-child(2) {top:65%;}
+
+/***** 대표상품  / .favs *****/
+.favs {margin-top:1rem;}
+.fav {width:49.5%; float:left;}
+.fav:first-child {margin-right:0.5%;}
+.fav:last-child {margin-left:0.5%;}
+
+/***** Woman/Man 상품  / .womans .mans *****/
+.prd_wrap {margin-top:4rem;}
+.prd_tit {float:left;}
+.prd_tit > * {float:left; height:2.5rem; line-height:2.5rem;}
+.prd_tit > h2 {font-weight: bolder; color:#333;}
+.prd_tit > span {color:#999; font-size:0.75em; margin-left:1rem;}
+.prd_bts {float:right;}
+
+.prd_conts {margin-top:1.5rem; position:relative;}
+.prd_conts > ul {opacity:0; position:absolute; width:100%;}
+.prds {width:23%; margin-right:2.66%; float:left;}
+.prds:last-child {margin-right:0;}
+ul.prd {font-size:1rem; text-align:center;} 
+ul.prd > li:not(:first-child) {padding:0.5rem 0;}
+ul.prd > :nth-child(1) {margin-bottom:1rem; position:relative;} 
+ul.prd > :nth-child(2) {font-size:0.875em;} 
+ul.prd > :nth-child(3) {font-size:0.75em; color:rgb(255, 187, 0);} 
+ul.prd > :nth-child(4) {font-size:0.875em; font-weight:bold;}
+.icon_hot {position:absolute; width:40px; height:40px; border-radius:20px; background-color:#333; color:#f8f8f8; text-align:center; line-height:40px; font-size:0.75em; left:5%; top:5%;} 
+.icon_sale {position:absolute; width:40px; height:40px; border-radius:20px; background-color:#aaa; color:#f8f8f8; text-align:center; line-height:40px; font-size:0.75em; right:5%; top:5%;}
+.prd_mask {width:100%; height:100%; background-color:rgba(0,0,0,0.4); position: absolute; top:0; left:0; display:none;} 
+.prd_icon {width:40px; height:40px; text-align:center; line-height:40px; position: absolute; color:#999; background-color:#eee; cursor:pointer; opacity:0;} 
+.prd_icon:hover {color:#333;}
+.icon_cart {right:5%; bottom:calc(5% + 90px);} 
+.icon_like {right:5%; bottom:calc(5% + 45px);} 
+.icon_search {right:5%; bottom:5%;} 
+.del_price {display:inline-block; padding-right:0.5rem; color:#999; text-decoration:line-through;}
+
+/***** Middle Banner *****/
+.mid_bans {margin-top:3rem;}
+.mid_bans > div {width:32.5%; margin-right:1.25%; float:left; }
+.mid_bans > div:last-child {margin-right:0;}
+.mid_bans > div > div:first-child {margin-bottom:2.5%;}
+
+/***** 블로그 포스트 및 고객 코멘트 / apis  *****/
+.apis {border-top:1px solid #eee; border-bottom:1px solid #eee; padding:3rem 0;}
+.apis > div {float:left; width:50%;}
+.posts {padding-right:5%;}
+.customers {padding-left:5%;}
+.apis h5 {font-size:0.75em; padding:1rem 0; color:#aaa;}
+.apis h3 {font-weight:bolder; color:#333;}
+.bt_more {border-bottom:none; font-size:0.75em;}
+
+.posts > ul, .customers > div {margin-top:2.5rem;}
+.post {width:50%; float:left; padding-right:5%; font-size:0.75rem;}
+.post > ul > li:nth-child(1) {font-weight:bolder; color:#666; font-size:1.125em; line-height:2em;}
+.post > ul > li:nth-child(2) {color:#aaa; line-height:2em;}
+.post > ul > li:nth-child(3) {padding:1rem 0;}
+
+.customers {position:relative;}
+.customer {font-size:0.75em; position:absolute; width:100%;}
+div.c_wrap {position:relative; overflow:hidden;}
+ul.c_slide {position:relative;}
+.customer:nth-child(1) {left:0;}
+.customer:nth-child(2) {left:100%;}
+.customer:nth-child(3) {left:200%;}
+.customer > div {width:20%; float:left; border-radius:50%; overflow:hidden;}
+.customer > ul {width:80%; float:left; padding-left:5%;}
+.customer > ul > li:nth-child(2) {margin-top:0.5rem; color:#333;}
+.customer > ul > li:nth-child(3) {margin-top:0.25rem; color:#aaa;}
+
+
+/***** brands *****/
+.brands > li {float:left; width:16.66%; text-align:center; margin:2rem 0;}
+
+/***** links *****/
+.links {margin:2rem 0.5%;}
+.links > li {width:33%; float:left;}
+.links > li:nth-child(2) {margin:0 0.5%;}
+
+/***** footer / .footers *****/
+footer {background-color:#f8f8f8; padding:3rem 0;}
+.footers > li {width:25%; padding:2%; float:left; font-size:0.75rem; line-height:2em;}
+.footer h5 {padding:0.5rem 0; font-weight:bold;}
+
+.copys {margin:3rem auto;}
+.copy {float:left; font-size:0.75em; color:#aaa;}
+.payment {float:right;}
+
+/***** Top 버튼 / .tops *****/
+.tops {width:60px; height:60px; border:2px solid #ccc; border-radius:50%; text-align:center; position:fixed; bottom:5%; right:2%; cursor:pointer; background-color:rgba(255,255,255, .3); z-index:65535; display:none;}
+.tops > i {font-size:1.5rem; line-height:55px;}
+.tops > i:hover {color:#333;}
